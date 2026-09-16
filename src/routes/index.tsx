@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useQuery } from "@tanstack/react-query";
 import { Clock, MapPin, Phone, Star } from "lucide-react";
 
-import heroVideo from "@/assets/hero-cafe.mp4.asset.json";
+import heroVideo from "@/assets/hero-food.mp4";
 import heroPoster from "@/assets/hero-poster.jpg";
 import burgerImg from "@/assets/burger.jpg";
 import brunchImg from "@/assets/brunch.jpg";
@@ -40,7 +40,7 @@ function Home() {
       <section className="relative flex min-h-[92vh] items-center justify-center overflow-hidden">
         <video
           className="absolute inset-0 size-full object-cover"
-          src={heroVideo.url}
+          src={heroVideo}
           poster={heroPoster}
           autoPlay
           muted
