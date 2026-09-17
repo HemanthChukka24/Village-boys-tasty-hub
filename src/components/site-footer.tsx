@@ -6,10 +6,7 @@ export function SiteFooter() {
     <footer className="border-t border-border bg-card">
       <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 md:grid-cols-3">
         <div>
-          <div className="flex items-center gap-3">
-            <img src="/favicon.ico" alt="" className="size-10 object-contain" />
-            <h2 className="font-display text-2xl tracking-wide text-foreground">{CAFE.name}</h2>
-          </div>
+          <h2 className="font-display text-2xl tracking-wide text-foreground">{CAFE.name}</h2>
           <p className="mt-3 max-w-xs text-sm text-muted-foreground">{CAFE.tagline}</p>
           <p className="mt-4 text-sm text-muted-foreground">{CAFE.priceRange}</p>
         </div>
@@ -60,7 +57,15 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="border-t border-border py-5 text-center text-xs text-muted-foreground">
-        © {new Date().getFullYear()} {CAFE.name}. All rights reserved.
+        © 2026 <strong className="text-foreground">Village Boys Tasty Hub</strong>. All rights reserved | Designed and Developed by{" "}
+        <a
+          href="https://www.vikrin.com"
+          target="_blank"
+          rel="noreferrer"
+          className="font-semibold text-foreground hover:underline"
+        >
+          Vikrin Pvt Ltd
+        </a>
       </div>
     </footer>
   );

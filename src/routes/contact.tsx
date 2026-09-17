@@ -100,15 +100,14 @@ function ContactPage() {
           </ul>
         </div>
 
-        <div className="shadow-elegant overflow-hidden rounded-2xl border border-border">
-          <iframe
-            title="Map to VillageBoys Tasty Hub"
-            src="https://www.google.com/maps?q=1%2F288%20Waymouth%20St%2C%20Adelaide%20SA%205000&output=embed"
-            className="h-[520px] w-full"
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          />
-        </div>
+        <iframe
+          title="Map to VillageBoys Tasty Hub"
+          src="https://www.google.com/maps?q=1%2F288%20Waymouth%20St%2C%20Adelaide%20SA%205000&output=embed"
+          className="h-[520px] w-full rounded-2xl"
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        />
+
       </div>
     </>
   );

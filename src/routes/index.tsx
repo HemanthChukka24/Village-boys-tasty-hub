@@ -3,7 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 import { Clock, MapPin, Phone, Star } from "lucide-react";
 
 import heroVideo from "@/assets/hero-food.mp4";
-import heroPoster from "@/assets/hero-poster.jpg";
+import heroPoster from "@/assets/hero-food-poster.jpg";
 import burgerImg from "@/assets/burger.jpg";
 import brunchImg from "@/assets/brunch.jpg";
 import interiorImg from "@/assets/cafe-interior.jpg";
@@ -58,19 +58,22 @@ function Home() {
             {CAFE.name}
           </h1>
           <p className="mx-auto mt-5 max-w-xl text-lg text-background/90">
-            Bold coffee, hearty brunches, juicy burgers and comfort food classics — made fresh in
-            the heart of Adelaide CBD.
+            Juicy burgers, big brekkies and authentic Hyderabadi biryani — made fresh in the heart
+            of Adelaide CBD.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <Link to="/menu" className="btn-hero">
               View the menu
             </Link>
             <a
-              href={CAFE.phoneHref}
+              href={CAFE.orderUrl}
+              target="_blank"
+              rel="noreferrer"
               className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-background px-6 py-[0.7rem] text-sm font-bold uppercase tracking-[0.08em] text-background transition-colors hover:bg-background hover:text-foreground"
             >
               <Phone className="size-4" /> Order now
             </a>
+
           </div>
         </div>
       </section>
@@ -85,7 +88,7 @@ function Home() {
                 ? today.is_closed
                   ? "Closed today"
                   : `${formatTime(today.open_time)} – ${formatTime(today.close_time)}`
-                : "7am – 3pm"
+                : "6:59am – 2:30pm"
             }
           />
           <InfoTile
@@ -206,7 +209,7 @@ function Home() {
           <div>
             <h2 className="text-4xl sm:text-5xl">Trading hours</h2>
             <p className="mt-3 text-sidebar-foreground/70">
-              Open seven days for dine in, takeaway, collection and delivery.
+              Open Monday to Saturday for dine in, takeaway, collection and delivery.
             </p>
             <Link to="/hours" className="btn-hero mt-6 text-sm">
               See full hours

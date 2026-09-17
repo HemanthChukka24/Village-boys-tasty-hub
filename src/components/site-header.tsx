@@ -30,7 +30,9 @@ export function SiteHeader() {
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
         <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <img src="/favicon.ico" alt="" className="size-10 object-contain" />
+          <span className="grid size-10 place-items-center rounded-full bg-primary font-display text-xl leading-none text-primary-foreground">
+            VB
+          </span>
           <span className="font-display text-xl tracking-wide text-foreground sm:text-2xl">
             {CAFE.name}
           </span>
@@ -48,9 +50,10 @@ export function SiteHeader() {
               {item.label}
             </Link>
           ))}
-          <a href={CAFE.phoneHref} className="btn-hero text-sm">
+          <a href={CAFE.orderUrl} target="_blank" rel="noreferrer" className="btn-hero text-sm">
             Order now
           </a>
+
         </nav>
 
         <button
@@ -75,9 +78,10 @@ export function SiteHeader() {
               {item.label}
             </Link>
           ))}
-          <a href={CAFE.phoneHref} className="btn-hero mt-4 inline-flex text-sm">
+          <a href={CAFE.orderUrl} target="_blank" rel="noreferrer" className="btn-hero mt-4 inline-flex text-sm">
             Order now
           </a>
+
         </nav>
       )}
     </header>
