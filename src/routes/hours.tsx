@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useQuery } from "@tanstack/react-query";
 
-import interiorImg from "@/assets/cafe-interior.jpg";
+import interiorAsset from "@/assets/cafe-interior.jpg";
 import { CAFE, DAY_NAMES, formatTime, WEEK_ORDER } from "@/lib/cafe";
 import { hoursQuery } from "@/lib/queries";
 import { PageHero } from "./menu";
@@ -13,7 +13,7 @@ export const Route = createFileRoute("/hours")({
       {
         name: "description",
         content:
-          "Opening and closing times for VillageBoys Tasty Hub on Waymouth St, Adelaide CBD. Open seven days for dine in and takeaway.",
+          "Opening and closing times for VillageBoys Tasty Hub on Waymouth St, Adelaide CBD. Open Monday to Saturday, 6:59am to 2:30pm.",
       },
       { property: "og:title", content: "Trading Hours — VillageBoys Tasty Hub" },
       {
@@ -32,8 +32,8 @@ function HoursPage() {
   return (
     <>
       <PageHero
-        image={interiorImg}
-        eyebrow="Open seven days"
+        image={interiorAsset}
+        eyebrow="Monday to Saturday"
         title="Trading hours"
         subtitle="Morning coffee, lunch rush or an afternoon feed — here's when we're on."
       />

@@ -3,7 +3,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import baristaImg from "@/assets/barista.jpg";
 import burgerImg from "@/assets/burger.jpg";
 import brunchImg from "@/assets/brunch.jpg";
-import interiorImg from "@/assets/cafe-interior.jpg";
+import interiorAsset from "@/assets/cafe-interior.jpg";
 import { PageHero } from "./menu";
 
 export const Route = createFileRoute("/about")({
@@ -87,7 +87,7 @@ function AboutPage() {
         <h2 className="text-4xl text-foreground sm:text-5xl">Inside the hub</h2>
         <div className="mt-8 grid gap-4 sm:grid-cols-3">
           {[
-            { src: interiorImg, alt: "Cafe seating and coffee counter" },
+            { src: interiorAsset, alt: "VillageBoys Tasty Hub storefront on Waymouth Street" },
             { src: burgerImg, alt: "Cheeseburger with chips" },
             { src: brunchImg, alt: "Breakfast wrap with coffee" },
           ].map((img) => (

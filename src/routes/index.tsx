@@ -6,7 +6,7 @@ import heroVideo from "@/assets/hero-food.mp4";
 import heroPoster from "@/assets/hero-food-poster.jpg";
 import burgerImg from "@/assets/burger.jpg";
 import brunchImg from "@/assets/brunch.jpg";
-import interiorImg from "@/assets/cafe-interior.jpg";
+import interiorAsset from "@/assets/cafe-interior.jpg";
 import { CAFE, DAY_NAMES, formatPrice, formatTime, WEEK_ORDER } from "@/lib/cafe";
 import { hoursQuery, menuQuery } from "@/lib/queries";
 
@@ -107,8 +107,8 @@ function Home() {
       <section className="section mx-auto max-w-6xl px-5">
         <div className="grid items-center gap-10 md:grid-cols-2">
           <img
-            src={interiorImg}
-            alt="Inside VillageBoys Tasty Hub cafe in Adelaide"
+            src={interiorAsset}
+            alt="VillageBoys Tasty Hub storefront on Waymouth Street, Adelaide"
             width={1600}
             height={1000}
             loading="lazy"
