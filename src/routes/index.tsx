@@ -3,7 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 import { Clock, MapPin, Phone, Star } from "lucide-react";
 
 import heroVideo from "@/assets/hero-food.mp4";
-import heroPoster from "@/assets/hero-food-poster.jpg";
+import heroPoster from "@/assets/hero-poster.jpg";
 import burgerImg from "@/assets/burger.jpg";
 import brunchImg from "@/assets/brunch.jpg";
 import interiorAsset from "@/assets/cafe-interior.jpg";
