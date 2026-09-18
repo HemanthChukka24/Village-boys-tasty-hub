@@ -16,10 +16,10 @@ import { hoursQuery, menuQuery, type MenuItem } from "@/lib/queries";
 export const Route = createFileRoute("/_authenticated/admin")({
   head: () => ({
     meta: [
-      { title: "Admin Panel — VillageBoys Tasty Hub" },
+      { title: `Admin Panel — ${CAFE.name}` },
       { name: "description", content: "Manage the cafe menu and trading hours." },
       { name: "robots", content: "noindex" },
-      { property: "og:title", content: "Admin Panel — VillageBoys Tasty Hub" },
+      { property: "og:title", content: `Admin Panel — ${CAFE.name}` },
       { property: "og:description", content: "Manage the cafe menu and trading hours." },
     ],
   }),
@@ -142,10 +142,7 @@ function AdminPage() {
     <div className="mx-auto max-w-5xl px-5 py-28">
       <div className="flex flex-wrap items-center justify-between gap-4">
         <div>
-          <div className="flex items-center gap-3">
-            <img src="/favicon.ico" alt="" className="size-10 object-contain" />
-            <p className="text-xs font-bold uppercase tracking-[0.25em] text-primary">{CAFE.name}</p>
-          </div>
+          <p className="text-xs font-bold uppercase tracking-[0.25em] text-primary">{CAFE.name}</p>
           <h1 className="mt-1 text-4xl text-foreground">Admin panel</h1>
           <p className="mt-1 text-sm text-muted-foreground">{roleQuery.data?.email}</p>
         </div>

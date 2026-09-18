@@ -2,19 +2,19 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useQuery } from "@tanstack/react-query";
 
 import brunchImg from "@/assets/brunch.jpg";
-import { formatPrice } from "@/lib/cafe";
+import { CAFE, formatPrice } from "@/lib/cafe";
 import { menuQuery } from "@/lib/queries";
 
 export const Route = createFileRoute("/menu")({
   head: () => ({
     meta: [
-      { title: "Menu — VillageBoys Tasty Hub, Adelaide" },
+      { title: `Menu — ${CAFE.name}, Adelaide` },
       {
         name: "description",
         content:
-          "Coffee, breakfast wraps, burgers, loaded fries and comfort food classics. See the full VillageBoys Tasty Hub menu and prices.",
+          `Coffee, breakfast wraps, burgers, loaded fries and comfort food classics. See the full ${CAFE.name} menu and prices.`,
       },
-      { property: "og:title", content: "Menu — VillageBoys Tasty Hub" },
+      { property: "og:title", content: `Menu — ${CAFE.name}` },
       {
         property: "og:description",
         content: "Coffee, brunch, burgers and comfort food classics in Adelaide CBD.",

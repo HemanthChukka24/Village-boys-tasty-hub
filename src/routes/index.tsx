@@ -13,13 +13,13 @@ import { hoursQuery, menuQuery } from "@/lib/queries";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "VillageBoys Tasty Hub — Cafe & Takeaway, Adelaide CBD" },
+      { title: "Village Boys — Tasty Hub, Cafe & Takeaway, Adelaide CBD" },
       {
         name: "description",
         content:
           "Locally owned Adelaide CBD cafe serving bold coffee, hearty brunches and juicy burgers on Waymouth Street. Dine in, takeaway, collection or delivery.",
       },
-      { property: "og:title", content: "VillageBoys Tasty Hub — Cafe & Takeaway, Adelaide CBD" },
+      { property: "og:title", content: "Village Boys — Tasty Hub, Cafe & Takeaway, Adelaide CBD" },
       {
         property: "og:description",
         content: "Bold coffee, big brunches and juicy burgers in the heart of Adelaide.",
@@ -108,7 +108,7 @@ function Home() {
         <div className="grid items-center gap-10 md:grid-cols-2">
           <img
             src={interiorAsset}
-            alt="VillageBoys Tasty Hub storefront on Waymouth Street, Adelaide"
+            alt="Village Boys storefront on Waymouth Street, Adelaide"
             width={1600}
             height={1000}
             loading="lazy"

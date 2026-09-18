@@ -57,7 +57,7 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="border-t border-border py-5 text-center text-xs text-muted-foreground">
-        © 2026 <strong className="text-foreground">Village Boys Tasty Hub</strong>. All rights reserved | Designed and Developed by{" "}
+        © 2026 <strong className="text-foreground">{CAFE.name}</strong> — {CAFE.tagline}. All rights reserved | Designed and Developed by{" "}
         <a
           href="https://www.vikrin.com"
           target="_blank"

@@ -9,13 +9,13 @@ import { PageHero } from "./menu";
 export const Route = createFileRoute("/hours")({
   head: () => ({
     meta: [
-      { title: "Trading Hours — VillageBoys Tasty Hub, Adelaide" },
+      { title: `Trading Hours — ${CAFE.name}, Adelaide` },
       {
         name: "description",
         content:
-          "Opening and closing times for VillageBoys Tasty Hub on Waymouth St, Adelaide CBD. Open Monday to Saturday, 6:59am to 2:30pm.",
+          `Opening and closing times for ${CAFE.name} on Waymouth St, Adelaide CBD. Open Monday to Saturday, 6:59am to 2:30pm.`,
       },
-      { property: "og:title", content: "Trading Hours — VillageBoys Tasty Hub" },
+      { property: "og:title", content: `Trading Hours — ${CAFE.name}` },
       {
         property: "og:description",
         content: "When we're open on Waymouth St, Adelaide CBD.",

@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { CAFE } from "@/lib/cafe";
 
 import baristaImg from "@/assets/barista.jpg";
 import burgerImg from "@/assets/burger.jpg";
@@ -9,13 +10,13 @@ import { PageHero } from "./menu";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Us — VillageBoys Tasty Hub, Adelaide CBD" },
+      { title: `About Us — ${CAFE.name}, Adelaide CBD` },
       {
         name: "description",
         content:
           "A locally owned, family-run cafe and takeaway in the heart of Adelaide CBD serving fusion comfort food, bold coffee and friendly service.",
       },
-      { property: "og:title", content: "About VillageBoys Tasty Hub" },
+      { property: "og:title", content: `About ${CAFE.name}` },
       {
         property: "og:description",
         content: "Family-run Adelaide cafe serving real food with genuine hospitality.",
@@ -43,7 +44,7 @@ function AboutPage() {
 
       <section className="mx-auto max-w-3xl px-5 py-16">
         <p className="text-lg text-muted-foreground">
-          VillageBoys Tasty Hub is a locally owned, family-run cafe and takeaway spot located in the
+          {CAFE.name} is a locally owned, family-run cafe and takeaway spot located in the
           heart of Adelaide CBD. We serve bold coffee, hearty brunches, juicy burgers and comfort
           food classics — all made fresh with quality ingredients and a whole lot of flavour.
         </p>
@@ -87,7 +88,7 @@ function AboutPage() {
         <h2 className="text-4xl text-foreground sm:text-5xl">Inside the hub</h2>
         <div className="mt-8 grid gap-4 sm:grid-cols-3">
           {[
-            { src: interiorAsset, alt: "VillageBoys Tasty Hub storefront on Waymouth Street" },
+            { src: interiorAsset, alt: "Village Boys storefront on Waymouth Street" },
             { src: burgerImg, alt: "Cheeseburger with chips" },
             { src: brunchImg, alt: "Breakfast wrap with coffee" },
           ].map((img) => (

@@ -9,13 +9,13 @@ import { PageHero } from "./menu";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact & Location — VillageBoys Tasty Hub, Adelaide" },
+      { title: `Contact & Location — ${CAFE.name}, Adelaide` },
       {
         name: "description",
         content:
-          "Find VillageBoys Tasty Hub at 1/288 Waymouth St, Adelaide SA 5000. Call +61 411 111 991 for collection or delivery.",
+          `Find ${CAFE.name} at 1/288 Waymouth St, Adelaide SA 5000. Call +61 411 111 991 for collection or delivery.`,
       },
-      { property: "og:title", content: "Contact VillageBoys Tasty Hub" },
+      { property: "og:title", content: `Contact ${CAFE.name}` },
       {
         property: "og:description",
         content: "1/288 Waymouth St, Adelaide SA 5000. Call us for collection or delivery.",
@@ -101,7 +101,7 @@ function ContactPage() {
         </div>
 
         <iframe
-          title="Map to VillageBoys Tasty Hub"
+          title={`Map to ${CAFE.name}`}
           src="https://www.google.com/maps?q=1%2F288%20Waymouth%20St%2C%20Adelaide%20SA%205000&output=embed"
           className="h-[520px] w-full rounded-2xl"
           loading="lazy"

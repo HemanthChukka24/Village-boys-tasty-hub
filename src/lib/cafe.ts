@@ -1,6 +1,6 @@
 export const CAFE = {
-  name: "VillageBoys Tasty Hub",
-  tagline: "Bold coffee. Big feeds. Adelaide CBD.",
+  name: "Village Boys",
+  tagline: "Tasty Hub",
   address: "1/288 Waymouth St, Adelaide SA 5000, Australia",
   phone: "+61 411 111 991",
   phoneHref: "tel:+61411111991",

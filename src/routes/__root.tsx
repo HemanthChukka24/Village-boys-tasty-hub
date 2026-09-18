@@ -75,13 +75,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "VillageBoys Tasty Hub — Cafe in Adelaide CBD" },
+      { title: "Village Boys — Tasty Hub, Cafe in Adelaide CBD" },
       {
         name: "description",
         content:
           "Bold coffee, hearty brunches and juicy burgers on Waymouth St, Adelaide CBD. Dine in or takeaway.",
       },
-      { name: "author", content: "VillageBoys Tasty Hub" },
+      { name: "author", content: "Village Boys" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
