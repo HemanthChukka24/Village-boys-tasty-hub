@@ -142,7 +142,10 @@ function AdminPage() {
     <div className="mx-auto max-w-5xl px-5 py-28">
       <div className="flex flex-wrap items-center justify-between gap-4">
         <div>
-          <p className="text-xs font-bold uppercase tracking-[0.25em] text-primary">{CAFE.name}</p>
+          <p className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.25em] text-primary">
+            <img src="/favicon.ico" alt="" className="size-6 object-contain" />
+            {CAFE.name}
+          </p>
           <h1 className="mt-1 text-4xl text-foreground">Admin panel</h1>
           <p className="mt-1 text-sm text-muted-foreground">{roleQuery.data?.email}</p>
         </div>

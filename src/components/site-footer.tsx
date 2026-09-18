@@ -6,7 +6,10 @@ export function SiteFooter() {
     <footer className="border-t border-border bg-card">
       <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 md:grid-cols-3">
         <div>
-          <h2 className="font-display text-2xl tracking-wide text-foreground">{CAFE.name}</h2>
+          <h2 className="flex items-center gap-3 font-display text-2xl tracking-wide text-foreground">
+            <img src="/favicon.ico" alt="" className="size-10 object-contain" />
+            {CAFE.name}
+          </h2>
           <p className="mt-3 max-w-xs text-sm text-muted-foreground">{CAFE.tagline}</p>
           <p className="mt-4 text-sm text-muted-foreground">{CAFE.priceRange}</p>
         </div>
@@ -57,7 +60,16 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="border-t border-border py-5 text-center text-xs text-muted-foreground">
-        © 2026 <strong className="text-foreground">{CAFE.name}</strong> — {CAFE.tagline}. All rights reserved | Designed and Developed by{" "}
+        © 2026{" "}
+        <strong className="text-foreground">
+          <img
+            src="/favicon.ico"
+            alt=""
+            className="mr-1 inline-block size-4 object-contain align-middle"
+          />
+          {CAFE.name}
+        </strong>{" "}
+        — {CAFE.tagline}. All rights reserved | Designed and Developed by{" "}
         <a
           href="https://www.vikrin.com"
           target="_blank"

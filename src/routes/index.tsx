@@ -54,7 +54,8 @@ function Home() {
           <p className="inline-flex items-center gap-2 rounded-full bg-background/15 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-background backdrop-blur">
             <Star className="size-3.5" /> {CAFE.rating} · {CAFE.reviews}
           </p>
-          <h1 className="mt-6 font-display text-5xl leading-none text-background sm:text-7xl md:text-8xl">
+          <h1 className="mt-6 flex items-center justify-center gap-3 font-display text-5xl leading-none text-background sm:gap-5 sm:text-7xl md:text-8xl">
+            <img src="/favicon.ico" alt="" className="size-12 object-contain sm:size-20" />
             {CAFE.name}
           </h1>
           <p className="mx-auto mt-5 max-w-xl text-lg text-background/90">
@@ -73,7 +74,6 @@ function Home() {
             >
               <Phone className="size-4" /> Order now
             </a>
-
           </div>
         </div>
       </section>
@@ -238,15 +238,7 @@ function Home() {
   );
 }
 
-function InfoTile({
-  icon,
-  title,
-  value,
-}: {
-  icon: React.ReactNode;
-  title: string;
-  value: string;
-}) {
+function InfoTile({ icon, title, value }: { icon: React.ReactNode; title: string; value: string }) {
   return (
     <div className="flex items-center gap-3">
       {icon}
