@@ -10,6 +10,7 @@ export type MenuItem = {
   is_available: boolean;
   is_featured: boolean;
   sort_order: number;
+  category_order: number;
 };
 
 export type OpeningHour = {
@@ -26,8 +27,8 @@ export const menuQuery = queryOptions({
   queryFn: async (): Promise<MenuItem[]> => {
     const { data, error } = await supabase
       .from("menu_items")
-      .select("id,name,description,price,category,is_available,is_featured,sort_order")
-      .order("category", { ascending: true })
+      .select("id,name,description,price,category,is_available,is_featured,sort_order,category_order")
+      .order("category_order", { ascending: true })
       .order("sort_order", { ascending: true });
     if (error) throw error;
     return (data ?? []) as MenuItem[];
