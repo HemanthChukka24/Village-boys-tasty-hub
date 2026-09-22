@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
+import headerLogo from "@/assets/VB Header logo - Full.png";
 import { CAFE } from "@/lib/cafe";
 
 const NAV = [
@@ -29,11 +30,12 @@ export function SiteHeader() {
       }`}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
-        <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <img src="/favicon.ico" alt="" className="size-10 object-contain" />
-          <span className="font-display text-xl tracking-wide text-foreground sm:text-2xl">
-            {CAFE.name}
-          </span>
+        <Link to="/" className="flex items-center" onClick={() => setOpen(false)}>
+          <img
+            src={headerLogo}
+            alt="Village Boys header logo"
+            className="h-14 w-auto object-contain sm:h-16"
+          />
         </Link>
 
         <nav className="hidden items-center gap-7 md:flex">
