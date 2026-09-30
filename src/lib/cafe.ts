@@ -9,7 +9,7 @@ export const CAFE = {
   reviews: "77 Google reviews",
   mapsUrl:
     "https://www.google.com/maps/search/?api=1&query=1%2F288+Waymouth+St+Adelaide+SA+5000",
-  orderUrl: "https://hungrymans.square.site/s/order?location=L62Q0K6TQ9ACB",
+  orderUrl: "https://villageboys-tasty-hub.square.site/",
 
   socials: [
     { label: "Instagram", url: "https://www.instagram.com/" },
